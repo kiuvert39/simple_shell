@@ -1,11 +1,11 @@
 #include "shell.h"
 /**
  * get_input_prompt -  use to display prompt
- *
+ * Return - it does not return anything
  *
  */
 
-void get_input_prompt(void)
+void prompt_display(void)
 {
 	kliu_print("kliuvert_shell$");
 }

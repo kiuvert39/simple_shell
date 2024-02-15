@@ -3,16 +3,14 @@
 
 int main(void)
 {
-	char input_command[128];
-
-
+	char input_command[120];
+	
 	while (true)
 	{
-		get_input_prompt();
-		user_input(input_command, sizeof(input_command));
-		command_exe(input_command);
-
-	}
+		prompt_display();
+		input_prompt(input_command, sizeof(input_command));
+		execut_cmd(input_command);
+	}	
 
 	return 0;
 }

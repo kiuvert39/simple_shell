@@ -1,11 +1,11 @@
 #include "shell.h"
-
 /**
- * kliu_print - returns void
- * @value: parameter that is passed to be printed
- */
+ * kliu_print - function that print a string to the screen
+ * 
+ * @data: data to be printed
+*/
 
-void kliu_print(const char *value)
+void kliu_print(const char *data)
 {
-	write(STDOUT_FILENO, value, strlen(value));
+    write(STDOUT_FILENO, data, strlen(data));
 }

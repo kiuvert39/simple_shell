@@ -1,18 +1,16 @@
 #ifndef SHELL_H
 #define SHELL_H
 
-
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <unistd.h>
-#include <stdbool.h>
+#include <string.h>
 #include <sys/wait.h>
+#include <stdbool.h>
 
-
-void kliu_print(const char *value);
-void get_input_prompt(void);
-void command_exe(const char *prompt);
-void user_input(char *input, size_t size)
+void kliu_print(const char *data);
+void prompt_display(void);
+void execut_cmd(const char *cmd);
+void input_prompt(char *input_prompt, size_t size);
 
 #endif
