@@ -1,6 +1,7 @@
 #include "shell.h"
 /**
- * get_input_prompt -  use to display prompt
+ * prompt_display -  use to display prompt
+ *
  * Return - it does not return anything
  *
  */
